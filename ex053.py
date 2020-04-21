@@ -1,0 +1,1 @@
+f = str(input('Escreva uma frase: '))

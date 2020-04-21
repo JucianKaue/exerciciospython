@@ -1,6 +1,3 @@
-#data:17/10/2019
-from typing import Tuple
-
 r = float(input('Quanto dinheiro você tem na carteira?\nR$: '))
 d = r/4.16
 e = float(r/4.61)
