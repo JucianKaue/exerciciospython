@@ -1,9 +1,9 @@
 s = 0
 n = int(input('Escreva um numero inteiro: '))
-for m in range(1, n):
+for m in range(1, n+1):
     if n % m == 0:
-        s = s + 1
-if s == 1:
-    print('O número {} é número primo'.format(n))
+        s += 1
+if s == 2:
+    print('O número foi divisivel {} vezes\nO número {} \033[1;32mÉ PRIMO'.format(s, n))
 else:
-    print('O número {} não é número primo'.format(n))
+    print('O número foi divisivel {} vezes\nO número {} \033[1;31mNÃO É PRIMO'.format(s, n))
