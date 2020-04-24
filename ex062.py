@@ -14,3 +14,4 @@ while not count == n:
     sleep(0.3)
     if count == n:
         n +=int(input('\nvocê deseja continuar por mais quantas vezes? '))
+print('Progressão finalizada com {} termos'.format(count))
