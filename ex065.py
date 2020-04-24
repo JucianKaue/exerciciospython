@@ -7,8 +7,8 @@ while stop in 'Ss':
     count += 1
     soma += n
     if count == 1:
-        maior = n
         menor = n
+        maior = n
     if n > maior:
         maior = n
     if n < menor:
