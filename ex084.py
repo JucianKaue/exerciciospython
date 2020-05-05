@@ -18,7 +18,7 @@ leves = []
 for c in range(len(pessoas)):
     if pessoas[c][1] == max(peso):
         pesadas.append(pessoas[c])
-    elif pessoas[c][1] == min(peso):
+    if pessoas[c][1] == min(peso):
         leves.append(pessoas[c])
 print('='*30)
 print(f'Foram cadastradas \033[33m{len(pessoas)} pessoas\033[0m')
