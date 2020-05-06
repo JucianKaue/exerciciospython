@@ -40,7 +40,7 @@ for m in range(len(mulheres)):
         print(f'{v:<10}', end=' ')
     print()
 print('\033[32m-\033[0m'*50)
-print('As pessoas com idade acima da média são:')
+print('As pessoas com idade acima da média são: ')
 print(f'\033[33m{"NOME":<10}{"SEXO":<10}{"IDADE":<10}\033[0m')
 for m in range(len(idosos)):
     for k, v in idosos[m].items():
