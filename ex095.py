@@ -21,6 +21,7 @@ while True:
         r = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
         if r in 'SN':
             break
+        print('ERRO! Responda apenas com S ou N')
     if r == 'N':
         break
 print('_='*37)
@@ -31,6 +32,12 @@ for c in range(len(jogadores)):
         print(f'{str(j):<15}', end='')
     print()
 print('-'*74)
-n = int(input('Você quer mostrar os dados de qual jogador? '))
-for c in range(jogadores[f'jogador{n}']['partidas']):
-    print(f'  --> Na {c+1}º partida, {jogadores[f"jogador{n}"]["Nome"]} fez {jogadores[f"jogador{n}"]["gols"][c]} gols')
+while True:
+    n = int(input('Você quer mostrar os dados de qual jogador? [0, para fanalizar] '))
+    if n == 0:
+        break
+    if n > len(jogadores):
+        print(f'ERRO! Não exite jogador {n}')
+    else:
+        for c in range(jogadores[f'jogador{n}']['partidas']):
+            print(f'  --> Na {c+1}º partida, {jogadores[f"jogador{n}"]["Nome"]} fez {jogadores[f"jogador{n}"]["gols"][c]} gols')
