@@ -17,5 +17,6 @@ while True:
     titulo(f'Mostrando manual de "{f}"', 30, 45)
     sleep(1)
     print('\033[44m')
-    print(f'{help(f)}')
+    help(f)
     print('\033[0m')
+    sleep(1)
