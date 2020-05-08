@@ -34,8 +34,7 @@ def format(n):
     return f'R${n:.2f}'
 
 
-def resumo(n, d, a):
-    from ex111.utilidades import dados
+def resumo(n, d=0, a=0):
     print('¬'*30)
     print(f'{"RESUMO DO VALOR":^30}')
     print('¬'*30)
